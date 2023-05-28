@@ -3,23 +3,8 @@ from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 import time
 import json
-# Adding headers to the request, specifically the 'User-Agent' header
-# because the url performs a user agent detection or require specific
-# headers for access. This prevents getting stuck in infinite loop.
 counter = [0]
 
-# 10 threads:
-
-# 1st: 16.6 seconds
-# 2nd: 14.48 seconds
-# 3rd 17.01 seconds
-
-
-# 20 threads:
-
-# 1st: 13.4 seconds
-# 2nd: 15 seconds
-# 3rd : 13.0 seconds
 allRequests = []
 
 
